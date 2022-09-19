@@ -1,0 +1,113 @@
+.nav-overlay {
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: fadeIn linear 0.1s;
+}
+.nav__mobile {
+    position: fixed;
+    z-index: 10001;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 320px;
+    max-width: 100%;
+    background-color: #fff;
+    transform: translateX(-100%);
+    transition: transform linear 0.2s;
+}
+
+.nav__mobile-list {
+    padding-left: 0;
+    margin-top: 38px;
+    margin-bottom: 0;
+    list-style: none;
+}
+.nav__mobile-list > li {
+    border-bottom: 1px solid #dedede;
+    padding: 12px 12px;
+}
+.nav__mobile-link {
+    text-decoration: none;
+    text-align: left;
+    color: #333;
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    &:hover {
+        color: var(--text-color);
+    }
+}
+
+.nav__mobile-close {
+    font-size: 2.8rem;
+    color: #666;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0 12px;
+}
+.subnav__mobile-return {
+    font-size: 2rem;
+    color: #666;
+    position: absolute;
+    top: -3.8rem;
+    left: 1rem;
+    padding: 0 12px;
+}
+
+.icon-angle-right {
+    flex: 1;
+    text-align: right;
+    font-size: 24px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.nav__input:checked ~ .nav-overlay {
+    display: block;
+}
+
+.nav__input:checked ~ .nav__mobile {
+    transform: translateX(0);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.custom-link {
+    padding: 0;
+    background: var(--text-color);
+}
+
+.custom-link li {
+    text-align: left;
+    list-style: none;
+    padding: 16px 12px;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
+}
+.custom-link span {
+    color: var(--white-color);
+    font-size: 1.6rem;
+}
+.custom-link .custom-link-icon {
+    color: var(--white-color);
+    margin-right: 12px;
+}
+.custom-link .custom-link-icon svg {
+    width: 24px;
+}
