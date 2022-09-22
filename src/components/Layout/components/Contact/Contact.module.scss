@@ -135,4 +135,14 @@
     .reinsurance-item-link {
         font-size: 1rem;
     }
+
+    .discount-title {
+        font-size: 38px;
+    }
+}
+
+@media (min-width: 46.25em) and (max-width: 63.9475em) {
+    .discount-title {
+        font-size: 86px;
+    }
 }

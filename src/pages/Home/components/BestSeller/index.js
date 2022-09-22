@@ -38,7 +38,7 @@ function BestSeller() {
                 <h3>SẢN PHẨM BÁN CHẠY</h3>
             </div>
 
-            <div className={cx('row')}>
+            <div className={cx('row', 'product-best-seller-wrapper')}>
                 {bestSellerList.map((item, index) => {
                     return (
                         <div key={index} className={cx('product-best-sellers__item col-6 col-md-4 col-lg-3')}>

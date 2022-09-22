@@ -11,7 +11,7 @@ function Home() {
         <>
             <Slider />
             <BestSeller />
-            {/* <CategoryBanner /> */}
+            <CategoryBanner />
         </>
     );
 }

@@ -3,6 +3,10 @@
     padding: 2vw 4vw;
 }
 
+.category-banner-box {
+    padding: 22px !important;
+}
+
 .category-banner-block a:hover .category-banner-item .label-box::before {
     height: 100%;
     opacity: 0.6;
@@ -26,34 +30,34 @@
 .category-banner-item__male {
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(./asset/picture/Áo\ thun\ -\ banner.jfif);
+    background: url('../../../../assets/images/categoryBanner/Áo\ thun\ -\ banner.jfif');
 }
 
 .category-banner-item__female {
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(./asset/picture/1.jpg);
+    background: url('../../../../assets/images/categoryBanner/Áo\ sơ\ mi.jpg')
 }
 
 .category-banner-item__bag {
     padding-bottom: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(./asset/picture/Áo\ khoác\ jeans\ -\ banner.jfif)
+    // background-image: url(./image/Áo\ khoác\ jeans\ -\ banner.jfif)
 }
 
 .category-banner-item__shoe {
     padding-bottom: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(./asset/picture/1.jpg)
+    // background-image: url(./image/4.jpg)
 }
 
 .category-banner-item__other {
     padding-bottom: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(./asset/picture/1.jpg)
+    // background-image: url(../../../../assets/images/categorybanner/4.jpg)
 }
 
 .category-banner-item .label-box {
@@ -114,4 +118,23 @@
     width: 0;
     background: var(--white-color);
     transition: width .5s;
+}
+
+@media (max-width: 46.2499em) {
+    .category-banner-block {
+        padding: 0;
+    }
+
+    .category-banner-item .label-box {
+        padding: 6px;
+    }
+
+    .category-banner-item .label-wrap h4 {
+        font-size: 1.6rem;
+        margin: 8px 0;
+    }
+
+    .category-banner-item .label-wrap p {
+        font-size: 1rem;
+    }
 }
