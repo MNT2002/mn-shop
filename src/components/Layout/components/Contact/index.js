@@ -5,11 +5,18 @@ import image2 from '../../../../assets/images/IconReinsurance/2.png';
 import image3 from '../../../../assets/images/IconReinsurance/3.png';
 import image4 from '../../../../assets/images/IconReinsurance/4.png';
 
+import sellImg1 from '../../../../assets/images/sellUpBanner/1.jpg';
+import sellImg2 from '../../../../assets/images/sellUpBanner/2.jpg';
+import sellImg3 from '../../../../assets/images/sellUpBanner/3.jpg';
+
 const cx = classNames.bind(styles);
 
 function Contact() {
     return (
         <div className={cx('Contact-block')}>
+            <div className={cx('contact__title')}>
+                <h3>Tại sao nên chọn chúng tôi</h3>
+            </div>
             <div className={cx('reinsurance-container')}>
                 <div className={cx('row', 'reinsurance-list')}>
                     <div className={cx('reinsurance-item-wrap', 'flex-shrink-1')}>
@@ -54,6 +61,29 @@ function Contact() {
                                 <br />
                                 0929 052 864 (Nhật)
                             </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className={cx('discount-wrapper')}>
+                <div className={cx('discount-title-box')}>
+                    <span className={cx('discount-title')}>SALE UP TO 60%</span>
+                </div>
+                <div className="row">
+                    <div className="col-4">
+                        <div className={cx('sell-up-box')}>
+                            <img className={cx('sell-up-img')} src={sellImg1} />
+                        </div>
+                    </div>
+                    <div className="col-4">
+                        <div className={cx('sell-up-box')}>
+                            <img className={cx('sell-up-img')} src={sellImg2} />
+                        </div>
+                    </div>
+                    <div className="col-4">
+                        <div className={cx('sell-up-box')}>
+                            <img className={cx('sell-up-img')} src={sellImg3} />
                         </div>
                     </div>
                 </div>

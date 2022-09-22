@@ -6,7 +6,7 @@ function DefaultLayout({ children }) {
     return (
         <div>
             <Header />
-            <div className="container-fluid">
+            <div className="container-fluid p-0">
                 <div>{children}</div>
             </div>
             <Contact />

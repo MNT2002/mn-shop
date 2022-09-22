@@ -1,4 +1,8 @@
 // Header Navbar
+.header {
+    height: var(--header-height);
+}
+
 .header__navbar {
     height: var(--navbar-height);
     display: flex;
@@ -331,10 +335,6 @@
     .header.header-sticky .header__logo {
         left: 0;
         width: 100%;
-        height: var(--navbar-height);
-    }
-
-    .header-menu {
         height: var(--navbar-height);
     }
 
