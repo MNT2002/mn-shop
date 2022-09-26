@@ -10,9 +10,10 @@
     --text-color2: #3a4754;
     --hover-color: #adadad;
 
-    --header-height: 128px;
+    --header-height: 120px;
     --navbar-height: 60px;
     --menu-height: calc(var(--header-height) - var(--navbar-height));
+    --banner__header-height: 34px;
 }
 
 * {

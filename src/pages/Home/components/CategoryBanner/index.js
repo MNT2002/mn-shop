@@ -6,10 +6,10 @@ const cx = classNames.bind(styles);
 function CategoryBanner() {
     return (
         <div className={cx('category-banner-block')}>
-            <div className={cx('row')}>
+            <div className={cx('row', 'm-0', 'p-0')}>
                 <div className={cx('col-12', 'col-md-6', 'col-lg-6', 'category-banner-box')}>
                     <a href="">
-                        <div className={cx('category-banner-item', 'category-banner-item__male')}>
+                        <div className={cx('category-banner-item', 'category-banner-item__ao-thun')}>
                             <div className={cx('label-box')}>
                                 <div className={cx('label-wrap')}>
                                     <h4>ÁO THUN</h4>
@@ -23,7 +23,7 @@ function CategoryBanner() {
                 </div>
                 <div className={cx('col-12', 'col-md-6', 'col-lg-6', 'category-banner-box')}>
                     <a href="">
-                        <div className={cx('category-banner-item', 'category-banner-item__female')}>
+                        <div className={cx('category-banner-item', 'category-banner-item__ao-somi')}>
                             <div className={cx('label-box')}>
                                 <div className={cx('label-wrap')}>
                                     <h4>ÁO SƠ MI</h4>
@@ -35,64 +35,49 @@ function CategoryBanner() {
                         </div>
                     </a>
                 </div>
-                <div className="column-2">
-                    <a href="">
-                        <div className="category-banner-item category-banner-item__female ">
-                            <div className="label-box">
-                                <div className="label-wrap">
-                                    <h4>ÁO SƠ MI</h4>
-                                    <span>
-                                        <p>Xem ngay</p>
-                                    </span>
+                <div className={cx('row', 'mt-2')}>
+                    <div className={cx('col-6', 'col-md-4', 'col-lg-4', 'category-banner-box')}>
+                        <a href="">
+                            <div className={cx('category-banner-item', 'category-banner-item__ao-khoac-jeans')}>
+                                <div className={cx('label-box')}>
+                                    <div className={cx('label-wrap')}>
+                                        <h4>ÁO KHOÁC JEANS</h4>
+                                        <span>
+                                            <p>Xem ngay</p>
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <div className="row c-flex-wrap c-mt-0 mt-4vw">
-                <div className="c-mr-0 col-4 mr-4vw">
-                    <a href="">
-                        <div className="category-banner-item  category-banner-item__bag ">
-                            <div className="label-box">
-                                <div className="label-wrap">
-                                    <h4>ÁO KHOÁC JEANS</h4>
-                                    <span>
-                                        <p>Xem ngay</p>
-                                    </span>
+                        </a>
+                    </div>
+                    <div className={cx('col-6','col-md-4', 'col-lg-4', 'category-banner-box')}>
+                        <a href="">
+                            <div className={cx('category-banner-item', 'category-banner-item__phu-kien')}>
+                                <div className={cx('label-box')}>
+                                    <div className={cx('label-wrap')}>
+                                        <h4>PHỤ KIỆN</h4>
+                                        <span>
+                                            <p>Xem ngay</p>
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div className="col-4">
-                    <a href="">
-                        <div className="category-banner-item category-banner-item__other mr-4vw">
-                            <div className="label-box">
-                                <div className="label-wrap">
-                                    <h4>Phụ kiện</h4>
-                                    <span>
-                                        <p>Xem ngay</p>
-                                    </span>
+                        </a>
+                    </div>
+                    <div className={cx('col-12', 'col-md-4', 'col-lg-4', 'category-banner-box')}>
+                        <a href="">
+                            <div className={cx('category-banner-item', 'category-banner-item__other')}>
+                                <div className={cx('label-box')}>
+                                    <div className={cx('label-wrap')}>
+                                        <h4>sẢN PHẦM NỔI BẬT</h4>
+                                        <span>
+                                            <p>Xem ngay</p>
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div className="col-4">
-                    <a href="">
-                        <div className="category-banner-item category-banner-item__other">
-                            <div className="label-box">
-                                <div className="label-wrap">
-                                    <h4>sản phẩm nổi bật</h4>
-                                    <span>
-                                        <p>Xem ngay</p>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

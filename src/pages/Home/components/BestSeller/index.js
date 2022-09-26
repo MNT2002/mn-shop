@@ -33,15 +33,15 @@ const cx = classNames.bind(styles);
 
 function BestSeller() {
     return (
-        <div className={cx('product-best-sellers container')}>
+        <div className={cx('product-best-sellers')}>
             <div className={cx('product-best-sellers__title')}>
                 <h3>SẢN PHẨM BÁN CHẠY</h3>
             </div>
 
-            <div className={cx('row', 'product-best-seller-wrapper')}>
+            <div className={cx('row','p-0','m-0', 'product-best-seller-wrapper')}>
                 {bestSellerList.map((item, index) => {
                     return (
-                        <div key={index} className={cx('product-best-sellers__item col-6 col-md-4 col-lg-3')}>
+                        <div key={index} className={cx('product-best-sellers__item', 'col-6 col-md-4 col-lg-3')}>
                             <a href="" className={cx('product-best-sellers__link')}>
                                 <div className={cx('item__img-wrap')}>
                                     <img src={item.href} alt="" className={cx('item__img')} />

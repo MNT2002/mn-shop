@@ -1,7 +1,9 @@
+
 import { Fragment } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { publicRoutes } from '../src/routes';
 import { DefaultLayout } from './components/Layout';
+
 
 function App() {
     return (
@@ -20,15 +22,17 @@ function App() {
                         }
 
                         return (
-                            <Route
-                                key={index}
-                                path={route.path}
-                                element={
-                                    <Layout>
-                                        <Page />
-                                    </Layout>
-                                }
-                            />
+                            <Fragment key={index}>
+                                <Route
+                                    key={index}
+                                    path={route.path}
+                                    element={
+                                        <Layout>
+                                            <Page />
+                                        </Layout>
+                                    }
+                                />
+                            </Fragment>
                         );
                     })}
                 </Routes>

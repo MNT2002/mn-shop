@@ -27,37 +27,37 @@
     border-radius: 3px;
 }
 
-.category-banner-item__male {
+.category-banner-item__ao-thun {
     background-size: cover;
     background-repeat: no-repeat;
-    background: url('../../../../assets/images/categoryBanner/Áo\ thun\ -\ banner.jfif');
+    background-image: url('../../../../assets/images/categoryBanner/Áo\ thun\ -\ banner.jfif');
 }
 
-.category-banner-item__female {
+.category-banner-item__ao-somi {
     background-size: cover;
     background-repeat: no-repeat;
-    background: url('../../../../assets/images/categoryBanner/Áo\ sơ\ mi.jpg')
+    background-image: url('../../../../assets/images/categoryBanner/Áo\ sơ\ mi.jpg')
 }
 
-.category-banner-item__bag {
+.category-banner-item__ao-khoac-jeans {
     padding-bottom: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    // background-image: url(./image/Áo\ khoác\ jeans\ -\ banner.jfif)
+    background-image: url('../../../../assets/images/categoryBanner/Áo\ khoác\ jeans\ -\ banner.jfif');
 }
 
-.category-banner-item__shoe {
+.category-banner-item__phu-kien{
     padding-bottom: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    // background-image: url(./image/4.jpg)
+    background-image: url('../../../../assets/images/categoryBanner/phụ\ kiện.jfif');
 }
 
 .category-banner-item__other {
     padding-bottom: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    // background-image: url(../../../../assets/images/categorybanner/4.jpg)
+    background-image: url('../../../../assets/images/categoryBanner/4.jpg');
 }
 
 .category-banner-item .label-box {

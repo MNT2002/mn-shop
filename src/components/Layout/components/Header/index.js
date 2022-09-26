@@ -17,6 +17,7 @@ import FormUser, { FormSignIn, FormSignUp } from './components/FormUser';
 
 const cx = classNames.bind(styles);
 
+
 function Header() {
     // Xứ lý cuộn màn hình thì sẽ thay đổi navbar và menu
     //Gọi components ScrollEvent đề thực hiện việc Xử lý cuộn màn hình
@@ -35,17 +36,19 @@ function Header() {
     const userIconRes = useRef();
 
     const menuIcon = useRef();
+    const menuIconWrap = useRef();
+  
     return (
         <>
             <BannerHeader />
             <header ref={headerElement} className={cx('header')}>
                 {/* Nav bar */}
                 <div className={cx('header__navbar')}>
-                    <div className={cx('header__navbar-list', 'header__bar-icon')}>
+                    <div ref={menuIconWrap} className={cx('header__navbar-list', 'header__bar-icon')}>
                         <li ref={menuIcon} className={cx('header__navbar-item')}>
                             <FontAwesomeIcon icon={faBars} />
                         </li>
-                        <MobileMenu menuIcon={menuIcon} userIconRes={userIconRes} />
+                        <MobileMenu menuIconWrap={menuIconWrap} menuIcon={menuIcon} userIconRes={userIconRes} />
                     </div>
 
                     <div className={cx('header__logo')}>
@@ -59,7 +62,7 @@ function Header() {
 
                         <li
                             ref={userIcon}
-                            className={cx('header__navbar-item-user', 'header__navbar-item', 'd-none', 'd-lg-block')}
+                            className={cx('header__navbar-item-user', 'header__navbar-item')}
                         >
                             <FontAwesomeIcon icon={faUser} />
                         </li>
