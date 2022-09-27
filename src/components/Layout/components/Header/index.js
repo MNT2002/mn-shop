@@ -101,7 +101,7 @@ function Header() {
                                 </a>
                             </li>
                             <li className={cx('menu-item')}>
-                                <a href="#">
+                                <a href="/aosomi">
                                     <span className={cx('menu-item-name')}>Áo sơ mi</span>
                                 </a>
                             </li>
