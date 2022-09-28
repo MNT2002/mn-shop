@@ -57,7 +57,10 @@ function Header() {
 
                     <ul className={cx('header__navbar-list', 'flex-right', 'justify-content-end')}>
                         <li className={cx('header__navbar-item', 'cart-icon')}>
-                            <FontAwesomeIcon icon={faCartShopping} />
+                            <a className={cx('cart-link')} href='/cart'>
+
+                                <FontAwesomeIcon icon={faCartShopping} />
+                            </a>
                         </li>
 
                         <li
@@ -73,7 +76,7 @@ function Header() {
                             <form ref={search} className={cx('form-mini-search')} action="">
                                 <div className={cx('search-button-wrap')}>
                                     <div ref={searchButton} className={cx('search-button')}>
-                                        <i>
+                                        <i style={{display: 'flex'}}>
                                             <FontAwesomeIcon icon={faMagnifyingGlass} />
                                         </i>
                                     </div>
