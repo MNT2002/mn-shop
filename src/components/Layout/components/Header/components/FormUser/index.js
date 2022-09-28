@@ -13,7 +13,7 @@ import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 const cx = classNames.bind(styles);
 
 function FormUser({ userIcon, userIconRes }) {
-    
+ 
         const FormSignUpElement = useRef();
         const signUpCloseButton = useRef();
     
